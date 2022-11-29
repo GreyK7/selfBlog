@@ -14,6 +14,11 @@
 <body>
     <header class="promo">
         <nav class="menu">
+            <div class="menu__burger">
+                <span class="menu__burger-item"></span>
+                <span class="menu__burger-item"></span>
+                <span class="menu__burger-item"></span>
+            </div>
             <ul class="menu__list">
                 <li class="menu__list-item"><a href="#" class="menu__link">Works</a></li>
                 <li class="menu__list-item"><a href="#" class="menu__link">Blog</a></li>
@@ -29,14 +34,18 @@
                     <button class="promo__btn">Download Resume</button>
                 </div>
                 <div class="promo__img">
-                    <img src="img/promoBigPhoto.png" alt="me" class="promo__photo">
+                    <picture>
+                        <source media="(min-width: 576px)" srcset="img/promoBigPhoto.png" class="promo__photo">
+                        <source media="(max-width: 575px)" srcset="img/promoSmallPhoto.png" class="promo__photo">
+                        <img src="img/promoBigPhoto.png" alt="me" class="promo__photo">
+                    </picture>
                     <div class="promo__photo-border"></div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="posts">
+    <!-- <section class="posts">
         <div class="container">
             <h2 class="posts__header">Recent posts</h2>
             <div class="posts__wrapper">
@@ -48,7 +57,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section> -->
+    <script src="js/script.js"></script>
 </body>
 </html>
