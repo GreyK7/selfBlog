@@ -1,0 +1,21 @@
+.posts {
+    background-color: var(--bg-blue);
+    min-height: 396px;
+    padding: 27px 0 32px 0;
+    &__header {
+        font-weight: 400;
+        font-size: 22px
+    }
+    &__wrapper {
+        margin-top: 20px;
+        width: 100%;
+        display: grid;
+        grid-template: 295px / repeat(auto-fit, 418px);
+        grid-auto-rows: 295px;
+        gap: 32px 0;
+        justify-content: space-between;
+    }
+    &__item {
+        background-color: var(--bg-white);
+    }
+}

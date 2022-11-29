@@ -1,0 +1,36 @@
+.menu {
+    position: absolute;
+    top: 27px;
+    right: 60px;
+    &__list {
+        width: 236px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list-item {
+        position: relative;
+        transition: all 1.5s linear;
+        &::after {
+            content: ' ';
+            visibility: hidden;
+            position: absolute;
+            top: 26px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+        }
+        &:hover {
+            &::after {
+                visibility: visible;
+            }
+        }
+    }
+    &__link {
+        color: var(--main-tcolor);
+        font-weight: 500;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
