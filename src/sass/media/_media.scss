@@ -25,12 +25,35 @@
             }
         }
     }
+
+    .posts {
+        &__wrapper {
+            justify-content: center;
+        }
+    }
 }
 
 
 @media (max-width: 767px) {
     .container {
         width: 540px;
+    }
+
+    .posts {
+        padding: 23px 0 38px 0;
+        &__signs {
+            justify-content: center;
+        }
+        &__header {
+            font-size: 18px;
+        }
+        &__all {
+            display: none;
+        }
+        &__wrapper {
+            margin-top: 37px;
+            row-gap: 17px;
+        }
     }
 }
 
